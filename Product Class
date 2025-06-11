@@ -1,0 +1,31 @@
+package AC;
+public class Product {
+
+
+// this sets the variables of information about the product.
+String name;
+double price;
+int quant;
+
+
+// this code makes it so the price and quantity can be used in other classes.
+public Product (String name, double price) {
+	 this.name = name;
+	 this.price = price;
+	 this.quant = 0;
+}
+// this allows us to do the math for multiple items
+public void purchase(int amount) {
+	 quant += amount;
+}
+// this is the math for the final price of the bill
+public  double totalprice() {
+	 return price * quant;
+}
+// this creates the bill with the given information from the calculations.
+public void bill() {
+	 if (quant>0) {
+		 System.out.printf("%s x%d = $%.2f\n", name, quant, totalprice());
+	 }
+}
+}
