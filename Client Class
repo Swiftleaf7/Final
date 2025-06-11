@@ -1,0 +1,22 @@
+package AC;
+public class Client {
+
+
+// this set the variable for each of the information	
+	String firstn;
+	String lastn ;
+	String mailadress;
+	String contact ;
+	String billinginfo ;
+
+
+// this establishes a public method that can be used in the other classes	
+	public Client(String firstn, String lastn, String mailadress, String contact, String billinginfo) {
+		this.firstn = firstn ;
+		this.lastn = lastn ;
+		this.mailadress = mailadress ;
+		this.contact = contact ;
+		this.billinginfo = billinginfo ;
+	}
+		
+}
